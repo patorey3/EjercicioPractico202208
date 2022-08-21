@@ -1,0 +1,122 @@
+﻿
+    [Index(nameof(IdentityDocument), IsUnique = true)]
+https://stackoverflow.com/questions/66702898/dataannotation-indexisunique-true-on-a-column-throws-error-attribute-inde
+
+
+No me envía detalle de error 
+así que modifique para que en la respuesta indique si hay o no error
+                return StatusCode(StatusCodes.Status304NotModified,
+                    new Model.Responses.CommonResponse 
+                    { 
+                        Records = records, Errors = 1, ErrorMessage = ex.Message
+                    });
+
+
+Repository pattern
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+
+Commandos de Migración
+Update-Database
+add-migration createDB
+Remove-Migration
+
+
+entity framework core code first migrations No store type was specified for the decimal property
+
+    [Column(TypeName = "decimal(18,4)")]
+    public decimal Size { get; set; }
+}
+http://jameschambers.com/2019/06/No-Type-Was-Specified-for-the-Decimal-Column/
+
+Migration error por proveedor no enviado: solución.
+    public MyContext(DbContextOptions options) : base(options)
+    {
+    }
+https://stackoverflow.com/questions/38338475/no-database-provider-has-been-configured-for-this-dbcontext-on-signinmanager-p
+
+
+The term 'add-migration' is not recognized as the name of a cmdlet
+1. Open your Cmd and go to the path of the project folder, then run this command 
+    dotnet add package Microsoft.EntityFrameworkCore.Tools
+https://debug.to/1129/the-term-add-migration-is-not-recognized-as-the-name-of-a-cmdlet
+
+
+Add contexto en program.cs
+.NET 6.0: Code First with Entity Framework Core and MySQL
+https://www.daveops.co.in/post/code-first-entity-framework-core-mysql
+
+
+
+The Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore NuGet package provides ASP.NET Core middleware for EF Core error pages. This middleware helps to detect and diagnose errors with EF Core migrations.
+https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-6.0
+
+DbContext Connection string en .Net Core, EntityFramework.Core
+https://stackoverflow.com/questions/38878140/how-can-i-implement-dbcontext-connection-string-in-net-core
+
+
+
+Patrón Arquitectura de Microservicios
+https://refactorizando.com/arquitectura-de-microservicios/
+
+Patrón DDD, Repository
+
+Patrón de repositorio
+https://docs.modyo.com/es/widgets/guides/repository-pattern.html
+Design the infrastructure persistence layer
+https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design
+El patron Repository: implementacion y buenas practicas
+https://our-academy.org/posts/el-patron-repository:-implementacion-y-buenas-practicas
+
+Quickstart: Docker in Visual Studio
+https://docs.microsoft.com/en-us/visualstudio/containers/container-tools?view=vs-2022
+
+Deploy and connect to SQL Server Docker containers
+https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-docker-container-deployment?view=sql-server-ver16&pivots=cs1-bash
+
+Visual Studio Container Tools with ASP.NET Core
+https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker?view=aspnetcore-6.0
+
+Tutorial: Create a multi-container app with Docker Compose
+https://docs.microsoft.com/en-us/visualstudio/containers/tutorial-multicontainer?view=vs-2022
+
+Deploy to Docker Hub
+https://docs.microsoft.com/en-us/visualstudio/containers/deploy-docker-hub?view=vs-2022
+
+.NET y DOCKER! - Cómo desplegar tus aplicaciones// Containers, .NET, Dockerfiles y MUCHO MÁS!
+https://www.youtube.com/watch?v=8WO-WlZ9NoA
+
+Qué es Docker y para qué sirve 🐳 - Introducción con ASP .NET y C#
+https://www.youtube.com/watch?v=3YcBB8d7Vho
+
+CRUD with a .NET 6 Web API & Entity Framework Core 🚀 Full Course
+https://www.youtube.com/watch?v=Fbf_ua2t6v4
+
+
+Code First
+EF Code-First Example
+https://www.entityframeworktutorial.net/code-first/simple-code-first-example.aspx
+
+Deploy an ASP.NET container to a container registry using Visual Studio
+https://docs.microsoft.com/en-us/visualstudio/containers/hosting-web-apps-in-docker?view=vs-2022
+
+Herencia en Code First
+
+    public class InheritanceMappingContext
+    {
+        public DbSet<Person> Persons { get; set; }
+    }
+
+    Fuentes:
+https://www.entityframeworktutorial.net/code-first/inheritance-strategy-in-code-first.aspx
+https://weblogs.asp.net/manavi/inheritance-mapping-strategies-with-entity-framework-code-first-ctp5-part-1-table-per-hierarchy-tph
+
+
+
+
+Verbos HTTP
+HTTP Get, Put, Post And Delete Verbs In ASP.NET WEB API
+https://www.c-sharpcorner.com/article/http-get-put-post-and-delete-verbs-in-asp-net-web-api/
+HttpVerbs Enumeración
+https://docs.microsoft.com/es-mx/dotnet/api/system.web.mvc.httpverbs?view=aspnet-mvc-5.2
+ActionVerbs: HttpGet, HttpPost, HttpPut
+https://www.tutorialsteacher.com/mvc/actionverbs-in-mvc
