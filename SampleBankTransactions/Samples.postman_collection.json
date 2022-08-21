@@ -1,0 +1,289 @@
+{
+	"id": "a34a8cbb-b524-4875-a7e8-298d8b88b561",
+	"name": "Samples",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"a6d26af9-6122-4fbe-adcd-cc39d6ea1e44",
+		"8c52a42d-ca18-4210-b441-30af642bf98a",
+		"a5d031a1-c111-4407-ae49-484e8e0d3e4c",
+		"5489f715-f59a-45e3-a51b-2e700e4912cf",
+		"7d11efb6-c4f3-4a83-ad1e-304aa8303a6d",
+		"f42e8ecf-b08f-452c-95ba-287459027c28",
+		"23547908-a287-4400-90da-0d131683c320",
+		"ec046aae-bb98-41a2-860a-9b34178b858a",
+		"9a5509c9-18db-4f9b-ad3b-fdb5e0cf979f",
+		"aee90c6c-6d12-4ab4-b0f7-cdf44d7f4d3e"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "23547908-a287-4400-90da-0d131683c320",
+			"name": "Clientes Delete",
+			"url": "https://localhost:7013/api/Clientes?identityDocument=123",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "identityDocument",
+					"value": "123",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "accept: text/plain\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5489f715-f59a-45e3-a51b-2e700e4912cf",
+			"name": "Clientes Put",
+			"url": "https://localhost:7013/api/Clientes",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n      \"identityDocument\": \"1234567890\",\r\n      \"name\": \"Marianela Montalvo\",\r\n      \"gender\": \"Mujer\",\r\n      \"birthDate\": \"2022-08-21T21:37:34.179\",\r\n      \"address\": \"Amazonas y NNUU\",\r\n      \"phone\": \"097548965\",\r\n      \"password\": \"*******\",\r\n      \"status\": true\r\n    }",
+			"pathVariables": {}
+		},
+		{
+			"id": "7d11efb6-c4f3-4a83-ad1e-304aa8303a6d",
+			"name": "Clientes Get",
+			"url": "https://localhost:7013/api/Clientes",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "accept: text/plain\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c52a42d-ca18-4210-b441-30af642bf98a",
+			"name": "Cuentas Get",
+			"url": "https://localhost:7013/Cuentas",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "accept: text/plain\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9a5509c9-18db-4f9b-ad3b-fdb5e0cf979f",
+			"name": "Movimientos Get By Client",
+			"url": "https://localhost:7013/api/Movimientos/1243567891",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "accept: text/plain\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a5d031a1-c111-4407-ae49-484e8e0d3e4c",
+			"name": "Clientes post",
+			"url": "https://localhost:7013/api/Clientes",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"identityDocument\": \"1234567892\",\n  \"name\": \"Juan Osorio\",\n  \"gender\": \"Hombre\",\n  \"birthDate\": \"2022-08-21T21:37:34.179Z\",\n  \"address\": \"13 junio y Equinoccial\",\n  \"phone\": \"098874587\",\n  \"password\": \"1245\",\n  \"status\": true\n}",
+			"headers": "accept: text/plain\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a6d26af9-6122-4fbe-adcd-cc39d6ea1e44",
+			"name": "Cuentas post",
+			"url": "https://localhost:7013/api/Cuentas",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"accountNumber\": \"585545\",\n    \"Type\": \"Corriente\",\n    \"startAmount\": 1000,\n    \"customerIdentityDocument\": \"1243567890\",\n    \"name\": \"Jose Lema\",\n    \"status\": true\n  }",
+			"headers": "accept: text/plain\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aee90c6c-6d12-4ab4-b0f7-cdf44d7f4d3e",
+			"name": "Movimientos Reporte Cliente y rango de fechas",
+			"url": "https://localhost:7013/api/Movimientos/1243567891&2022-08-18&2022-08-19",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "accept: text/plain\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ec046aae-bb98-41a2-860a-9b34178b858a",
+			"name": "Movimientos POST",
+			"url": "https://localhost:7013/api/Movimientos",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"createDate\": \"2022-08-21T22:46:48.334Z\",\n  \"accountNumber\": \"478758\",\n  \"typeOfMove\": 1,\n  \"amount\": 575,\n  \"balance\": 0\n}",
+			"headers": "accept: text/plain\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f42e8ecf-b08f-452c-95ba-287459027c28",
+			"name": "Clientes Get One",
+			"url": "https://localhost:7013/api/Clientes/1234567890",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "accept",
+					"value": "text/plain",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "accept: text/plain\n",
+			"pathVariables": {}
+		}
+	]
+}

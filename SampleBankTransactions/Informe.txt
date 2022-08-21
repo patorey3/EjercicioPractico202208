@@ -18,3 +18,5 @@ En Post de Movimientos
 }
 
 typeOfMove: 0 es para depósito, 1 es para retiro
+
+

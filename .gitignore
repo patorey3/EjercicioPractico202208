@@ -363,5 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # My files to ignore
-Bitacora.txt
-Informe.txt
+/Bitacora.txt
+/Informe.txt
